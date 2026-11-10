@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Убегающий шарик</title>
+<style>
+body { margin: 0; height: 100vh; overflow: hidden; background: #f4f4f4; font-family: Arial; }
+h1 { text-align: center; margin-top: 20px; }
+#ball { width: 60px; height: 60px; background: #ff4757; border-radius: 50%; position: absolute; top: 150px; left: 150px; }
+</style>
+</head>
+<body>
+<h1 id="score">Побегов: 0</h1>
+<div id="ball"></div>
+<script>
+const ball = document.getElementById("ball");
+const score = document.getElementById("score");
+let count = 0;
+ball.addEventListener("mouseenter", () => {
+ball.style.left = Math.floor(Math.random() * (window.innerWidth - 60)) + "px";
+ball.style.top = Math.floor(Math.random() * (window.innerHeight - 60)) + "px";
+count++;
+score.textContent = "Побегов: " + count;
+});
+</script>
+</body>
+</html>
