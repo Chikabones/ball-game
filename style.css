@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#ball {
+    width: 60px;
+    height: 60px;
+    background: #ff4757;
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
